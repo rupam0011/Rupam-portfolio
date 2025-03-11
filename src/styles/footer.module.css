@@ -1,0 +1,51 @@
+
+
+@media screen and (max-width:768px) {
+    
+    .foot_container{
+        /* border: 2px solid red; */
+    }
+    .foot_container .foot_text{
+        /* border: 2px solid green; */
+        margin: 0px 20px;
+    }
+    .foot_container .foot_mail{
+        /* border: 2px solid green; */
+        margin: 0px 20px;
+    }
+}
+@media screen and (max-width:480px) {
+    
+    .foot_container{
+        /* border: 2px solid red; */
+    }
+    .foot_container .foot_text{
+        /* border: 2px solid green; */
+        margin: 0px 10px;
+        width: 65px;
+        font-size: 12px;
+    }
+    .foot_container .foot_mail{
+        /* border: 2px solid green; */
+        margin: 0px 10px;
+        width: 220px;
+        font-size: 12px;
+    }
+    
+
+}
+
+@media screen and (max-width:375px){
+    .foot_container .foot_text{
+        /* border: 2px solid green; */
+        margin: 0px 8px;
+        width: 65px;
+        font-size: 12px;
+    }
+    .foot_container .foot_mail{
+        /* border: 2px solid green; */
+        margin: 0px 8px;
+        width: 230px;
+        font-size: 11px;
+    }
+}

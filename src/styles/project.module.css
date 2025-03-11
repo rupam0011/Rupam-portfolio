@@ -1,0 +1,375 @@
+.project_container {
+    background: #121212;
+    min-height: 100vh;
+}
+
+.project_container .prheading h1 {
+    color: white;
+    font-size: 3rem;
+}
+
+.pr_buttons {
+    margin-top: 20px;
+}
+
+
+.pr_buttons .pr_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #dbdbdb34;
+    border-radius: 5px;
+
+    color: #b5b5b5a4;
+    background: linear-gradient(120deg,
+            rgba(255, 255, 255, 0) 40%,
+            rgb(255, 255, 255) 50%,
+            rgba(255, 255, 255, 0) 60%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    animation: shine 2s linear infinite;
+    transition: all 0.2s ease-in-out;
+}
+
+.pr_buttons .pr_btn:hover {
+    border-radius: 5px;
+    border-color: rgb(77 77 77);
+}
+
+
+.pr_buttons .pr_btnContent {
+    display: flex;
+    align-items: center;
+
+}
+
+.pr_buttons .pr_btn .pr_icon {
+    font-size: 20px;
+
+    color: white;
+    opacity: 0.7;
+    /* vertical-align: middle; */
+
+    margin-left: 10px;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 100%;
+    }
+
+    100% {
+        background-position: -100%;
+    }
+}
+
+.shiny-text.disabled {
+    animation: none;
+}
+
+/*-------------------------- work ----------------------------*/
+
+.pr_work_container {
+    margin-top: 40px;
+}
+
+.pr_work_grid {
+    display: grid;
+    /* border: 2px solid red; */
+    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    /* Adjust spacing between cards */
+    /* border: 2px solid green; */
+}
+
+.pr_work_grid .pr_cards {
+    color: #ffffff;
+    /* border: 2px solid green; */
+    padding: 10px;
+    outline: none;
+    /* border: none; */
+    border-radius: 5px;
+    width: 100%;
+    /* height: 260px; */
+    display: flex;
+    cursor: pointer;
+    /* border: 2px solid green; */
+    transition: all 0.3s ease-in-out;
+    /* border: 2px solid red; */
+}
+
+.pr_work_grid .pr_cards:hover {
+    background-color: rgb(31 31 31);
+}
+
+.pr_cards .pr_card_img {
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    height: 255px;
+    /* border: 2px solid red; */
+}
+
+.pr_cards img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    /* object-fit:contain; */
+    /* border: 2px solid red; */
+
+}
+
+.pr_cards .pr_card_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 5px 0px;
+    margin-left: 10px;
+    /* border: 2px solid red; */
+}
+
+.pr_card_text h3 {
+    font-size: 16px;
+}
+
+
+
+.pr_card_text .pr_card_btn {
+    color: white;
+    background: transparent;
+    width: 100px;
+    padding: 10px 8px;
+    border: 1px solid #dbdbdb34;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.2s ease-in-out;
+    /* margin-bottom: 5px; */
+}
+
+.pr_card_text .pr_card_btn:hover {
+    opacity: 1;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .project_container {
+        background: #121212;
+        /* min-height: auto ; */
+    }
+
+    .project_container .prlanding {
+        height: 100%;
+    }
+
+    .project_container .prheading h1 {
+        color: white;
+        font-size: 2.6rem;
+    }
+
+    .pr_work_grid {
+        grid-template-rows: 1fr;
+        width: 100%;
+        gap: 20px;
+        /* border: 2px solid red; */
+    }
+
+    .pr_work_grid .pr_cards {
+        width: 100%;
+        height: 230px;
+        /* border: 2px solid green; */
+    }
+
+    .pr_cards .pr_card_img {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        width: 410px;
+        height: 100%;
+        /* border: 2px solid red; */
+    }
+
+
+    .pr_card_text h3 {
+        font-size: 15px;
+    }
+
+    .pr_card_text .pr_card_btn {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .pr_work_grid {
+        grid-template-rows: 1fr;
+        width: 100%;
+        gap: 20px;
+        /* border: 2px solid red; */
+    }
+
+    .pr_work_grid .pr_cards {
+        width: 100%;
+        height: 180px;
+        /* border: 2px solid green; */
+    }
+
+    .pr_cards .pr_card_img {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        width: 320px;
+        height: 100%;
+        /* border: 2px solid red; */
+    }
+
+    /* .pr_cards .pr_card_text {
+        border: 2px solid red; 
+         width: 130px;
+    } */
+
+    .pr_card_text h3 {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .project_container .prbody {
+        padding-top: 60px;
+    }
+
+    .project_container .prheading h1 {
+        color: white;
+        font-size: 2.2rem;
+    }
+
+    .pr_work_grid {
+        grid-template-rows: 1fr;
+        width: 100%;
+        gap: 5px;
+        /* border: 2px solid green; */
+    }
+
+    .pr_work_grid .pr_cards {
+        width: 100%;
+        height: 160px;
+        /* border: 2px solid rgb(128, 0, 26); */
+    }
+
+    .pr_cards .pr_card_img {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        width: 250px;
+        /* height: 120px;  */
+        /* border: 2px solid red; */
+    }
+
+    .pr_cards .pr_card_text {
+        /* border: 2px solid red; */
+        width: 110px;
+    }
+
+
+    .pr_card_text h3 {
+        font-size: 12px;
+    }
+
+    .pr_card_text .pr_card_btn {
+        font-size: 8px;
+        width: 70%;
+    }
+
+    .prlanding .prbody {
+        /* padding-bottom: 10px; */
+        /* border: 2px solid red; */
+        width: 95%;
+    }
+
+    .pr_buttons .pr_btn {
+        width: 47%;
+        margin: 0px 5px;
+        justify-content: center;
+
+
+    }
+
+    .pr_buttons .pr_btnContent {
+        justify-content: center;
+    }
+
+
+}
+
+@media screen and (max-width: 390px) {
+    .pr_work_grid .pr_cards {
+        width: 100%;
+        height: 150px;
+        /* border: 2px solid rgb(128, 0, 26); */
+    }
+
+    .pr_cards .pr_card_img {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        width: 225px;
+        height: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .pr_cards .pr_card_text {
+        /* border: 2px solid red; */
+        width: 110px;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+    .pr_work_grid .pr_cards {
+        padding: 5px;
+        width: 94%;
+        height: 130px;
+        /* border: 2px solid rgb(128, 0, 26); */
+    }
+
+    .pr_cards .pr_card_img {
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        width: 225px;
+        height: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .pr_cards .pr_card_text {
+        /* border: 2px solid red; */
+        width: 110px;
+    }
+
+    .pr_card_text .pr_card_btn {
+
+        width: 70px;
+        /* padding: 8px 6px; */
+        border: 1px solid #dbdbdb34;
+        border-radius: 5px;
+        font-size: 8px;
+        letter-spacing: 1px;
+        cursor: pointer;
+        opacity: 0.6;
+        transition: all 0.2s ease-in-out;
+        /* margin-bottom: 5px; */
+    }
+}
