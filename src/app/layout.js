@@ -21,6 +21,9 @@ export const metadata = {
   description: "Rupam Majumder portfolio",
   twitter:{
     card: "summary_large_image",
+  },
+  verification: {
+    google: "wIvwTWFTogtIwLvFXv2zxs7uWG0NseG7KueBt-e49yY",
   }
 };
 
