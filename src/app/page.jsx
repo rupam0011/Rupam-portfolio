@@ -99,7 +99,7 @@ export default function Home() {
             <Typography className={mainStyles.tech_p}>Framework, Library and resources I use regularly.</Typography>
             <Box className={mainStyles.tech_div}>
               <Box className={mainStyles.techs}>
-                <Image src="https://pritamjoardar.site/logos/react.svg" alt="react-img" width={50} height={50} loading="lazy" />
+                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="react-img" width={40} height={40} loading="lazy" />
                 <span>
                   <h4>React.Js</h4>
                   <p>Frontend Library</p>
@@ -108,7 +108,7 @@ export default function Home() {
             </Box>
             <Box className={mainStyles.tech_div}>
               <Box className={mainStyles.techs}>
-                <Image src={redux} alt="react-img" width={50} height={50} loading="lazy" />
+                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" alt="react-img" width={40} height={40} loading="lazy" />
                 <span>
                   <h4>Redux</h4>
                   <p>State Management</p>
@@ -117,7 +117,7 @@ export default function Home() {
             </Box>
             <Box className={mainStyles.tech_div}>
               <Box className={mainStyles.techs}>
-                <Image src="https://pritamjoardar.site/logos/javascript.svg" alt="react-img" width={50} height={40} loading="lazy" />
+                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="react-img" width={40} height={40} loading="lazy" />
                 <span>
                   <h4>Javascript</h4>
                   <p>Making the logic</p>
@@ -126,7 +126,7 @@ export default function Home() {
             </Box>
             <Box className={mainStyles.tech_div}>
               <Box className={mainStyles.techs}>
-                <Image src={mui} alt="react-img" width={50} height={50} loading="lazy" />
+                <Image src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="react-img" width={40} height={40} loading="lazy" />
                 <span>
                   <h4>Material Ui</h4>
                   <p>Component Library</p>

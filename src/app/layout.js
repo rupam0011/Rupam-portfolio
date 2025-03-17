@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Wrapper from "@/layouts/Wrapper";
-
+/** @type {import('next').Metadata} */
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,18 +14,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Rupam Majumder",
-  description: "This is my portfolio",
-  // icons:{
-  //   icon : "/favicon.ico"
-  // }
+  title: {
+    default: "Rupam Majumder",
+    template: "%s - Rupam Majumder"
+  },
+  description: "Rupam Majumder portfolio",
+  twitter:{
+    card: "summary_large_image",
+  }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/favicon.png" type="image/png" sizes="512x512" />
-      <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Wrapper>
         {children}

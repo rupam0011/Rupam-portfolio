@@ -27,7 +27,7 @@
 .st_tech_card {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   /* background: #222; */
   padding: 12px;
   border-radius: 8px;
@@ -37,8 +37,8 @@
 
 /* Icons */
 .st_tech_card img {
-  width: 40px;
-  height: 40px;
+  /* width: 40px; */
+  /* height: 40px; */
 }
 
 .st_tech_card .texts {

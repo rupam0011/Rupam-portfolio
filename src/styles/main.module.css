@@ -325,14 +325,14 @@
 }
 
 .tech_container .tech_div{
-    margin: 22px 0px;
+    margin: 25px 0px;
 
 }
 
 .tech_div .techs{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
 }
 

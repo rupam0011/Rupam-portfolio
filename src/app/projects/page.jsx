@@ -10,6 +10,10 @@ import Image from 'next/image';
 import projectsData from "@/data/Projectsdata";
 import Link from 'next/link';
 
+export const metadata = {
+    title:"Projects"
+  }
+
 const Projects = () => {
     
     return (
