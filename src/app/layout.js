@@ -22,14 +22,17 @@ export const metadata = {
   twitter:{
     card: "summary_large_image",
   },
-  verification: {
-    google: "wIvwTWFTogtIwLvFXv2zxs7uWG0NseG7KueBt-e49yY",
-  }
+  // verification: {
+  //   google: "wIvwTWFTogtIwLvFXv2zxs7uWG0NseG7KueBt-e49yY",
+  // }
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+    <head>
+      <meta name="google-site-verification" content="wIvwTWFTogtIwLvFXv2zxs7uWG0NseG7KueBt-e49yY"/>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Wrapper>
         {children}
