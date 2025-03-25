@@ -1,0 +1,81 @@
+.st_container {
+  background: #121212;
+  min-height: 100vh;
+}
+
+.st_container .st_landing .st_body h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+.st_container .st_landing .st_body .upperp {
+  color: white;
+  opacity: 0.8;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.st_tech_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  margin-top: 40px;
+}
+
+/* Each tech card styling */
+.st_tech_card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* background: #222; */
+  padding: 12px;
+  border-radius: 8px;
+}
+
+
+
+/* Icons */
+.st_tech_card img {
+  /* width: 40px; */
+  /* height: 40px; */
+}
+
+.st_tech_card .texts {
+  color: white;
+}
+
+/* Mobile Responsive */
+
+
+@media screen and (max-width: 1024px) {
+  .st_landing {
+    /* border: 2px solid red; */
+  }
+
+  .st_landing .st_body {
+    /* border: 2px solid red; */
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .st_landing .st_body {
+    /* border: 2px solid red; */
+    width: 80%;
+    padding-top: 50px;
+  }
+
+  .st_tech_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .st_container .st_landing .st_body h1 {
+    font-size: 2.2rem;
+  }
+
+  .st_container .st_landing .st_body .upperp {
+    margin-left: 0px;
+
+  }
+}

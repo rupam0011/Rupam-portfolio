@@ -1,0 +1,364 @@
+.det_container{
+    background: #121212;
+    min-height: 100vh;
+}
+
+.det_container .detbody .proj_link{
+    color: white;
+    font-size: 16px;
+    opacity: 0.7;
+    font-weight: lighter;
+    /* border: 2px solid red; */
+    transition: all 0.3s ease;;
+}
+
+.det_container .detbody .proj_link:hover{
+    opacity: 1;
+    transform: translateX(-10px);
+}
+
+.det_container .detbody .title{
+    color: white;
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+.det_container .detbody .work_img{
+    width: 700px;
+    height: 360px;
+    /* border: 2px solid red; */
+    border-radius: 10px;
+    margin-top: 30px;
+}
+.det_container .detbody .work_img img{
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+    border-radius: 10px;
+}
+
+.det_container .detbody .techs{
+    /* border: 2px solid red; */
+    width: 720px;
+    margin-top: 10px;
+}
+.det_container .detbody .techbtn{
+    border: 1px solid #e2e2e25d;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background: transparent;
+    color: white;
+    opacity: 0.75;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: all 0.2s;
+    /* display: inline-block; */
+    /* text-align: center; */
+    /* line-height: 25px;  */
+    vertical-align: middle; 
+    /* white-space: nowrap;  */
+}
+.det_container .detbody .techs .techbtn:hover{
+    opacity: 1;
+}
+
+.det_container .detbody .techs .techbtn img{
+    /* width: 20px;
+    height: 20px; */
+    vertical-align: middle;
+    /* margin-left: 5px; */
+}
+
+.det_container .detbody .livebox{
+    margin-top: 20px;
+    width: 700px;
+    /* border: 2px solid red; */
+}
+.det_container .detbody .livebox .gitbtn{
+    border: 1px solid #e2e2e25d;
+    font-weight: 500;
+    margin-right: 5px;
+    /* margin-bottom: 5px; */
+    background: transparent;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.det_container .detbody .livebox .livebtn{
+    border: none;
+    margin-right: 5px;
+    /* margin-bottom: 5px; */
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+.det_container .detbody .livebox .livebtn:hover{
+   opacity: 0.8;
+}
+.det_container .detbody .livebox .liveicon{
+    vertical-align: middle;
+    padding-left: 2px;
+}
+
+.det_container .detbody .description{
+    /* border: 2px solid red; */
+    width: 700px;
+    color: white;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+
+.det_container .detbody .description h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.det_container .detbody .description p{
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.det_container .detbody .features{
+    /* border: 2px solid red; */
+    width: 700px;
+    color: white;
+    opacity: 0.7;
+    margin-top: 30px;
+}
+.det_container .detbody .features h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.det_container .detbody .features p{
+    font-weight: 600;
+    font-size: 15px;
+    /* text-align: justify; */
+    margin-bottom: 15px;
+    /* text-decoration: underline; */
+}
+
+.det_container .detbody .features span{
+    font-weight: 100;
+    font-size: 14px;
+    text-decoration: none;
+}
+.det_container .detbody .imgbox {
+    display: flex; /* Make images align in a row */
+    flex-wrap: wrap; /* Wrap to next line if needed */
+    gap: 15px; /* Add spacing between images */
+    justify-content: center; /* Center the images */
+    width: 700px; 
+    margin-top: 30px;
+    /* border: 2px solid red; */
+}
+
+.det_container .detbody .imgbox h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+    opacity: 0.7;
+    text-decoration:underline;
+}
+
+.det_container .detbody .imgbox .images {
+    width: auto; /* Keep original image size */
+    height: auto;
+    /* width: 100%; */
+    /* border: 2px solid red; */
+}
+
+.det_container .detbody .imgbox .images img {
+    width: auto; /* Prevent stretching */
+    max-width: 100%; /* Keep within container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure full image is shown without distortion */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+@media screen and (max-width: 1024px){
+    .detlanding .detbody{
+        /* border: 2px solid red; */
+        padding-top: 50px;
+        width: 60%;
+    }
+    .det_container .detbody .title{
+        color: white;
+        margin-top: 50px;
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+    
+    .det_container .detbody .work_img{
+        width: 100%;
+        height: 290px;
+        /* border: 2px solid red; */
+        
+    }
+    .det_container .detbody .techs{
+        width: 100%;
+    }
+
+    .det_container .detbody .techbtn{
+        padding: 6px 8px;
+    }
+    .det_container .detbody .livebox .gitbtn{
+        padding: 6px 8px;
+      
+    }
+    .det_container .detbody .livebox .livebtn{
+        padding: 6px 8px;
+      
+    }
+    /* ///////////////// */
+    .det_container .detbody .description{
+        /* border: 2px solid red; */
+        width: 100%;
+      
+    }
+    
+    .det_container .detbody .description h3{
+        font-size: 16px;
+    
+    }
+    
+    .det_container .detbody .description p{
+        font-size: 14px;
+    }
+    
+    .det_container .detbody .features{
+        /* border: 2px solid red; */
+        width: 100%;
+       
+    }
+    .det_container .detbody .features h3{
+        font-size: 16px;
+    }
+    
+    
+    .det_container .detbody .features span{
+        font-size: 14px;
+    }
+    .det_container .detbody .imgbox {
+        width: 100%;
+    }
+    
+    .det_container .detbody .imgbox h3{
+        font-size: 16px;
+        
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .det_container .detbody .work_img{
+        width: 100%;
+        height: 260px;
+        /* border: 2px solid red; */
+    }
+    .detlanding .detbody{
+        /* border: 2px solid red; */
+        padding-top: 50px;
+        width: 70%;
+    }
+
+}
+
+@media screen and (max-device-width: 480px){
+    .det_container .detbody{
+        /* border: 2px solid red; */
+        width: 95%;
+        padding-top: 30px;
+    }
+    .det_container .detbody .title{
+        color: white;
+        margin-top: 50px;
+        font-weight: 400;
+        font-size: 2rem;
+    }
+    
+    .det_container .detbody .work_img{
+        width: 100%;
+        height: 190px;
+        /* border: 2px solid red; */
+    }
+    .det_container .detbody .techs{
+        width: 100%;
+    }
+
+    .det_container .detbody .techbtn{
+        padding: 6px 8px;
+        font-size: 15px;
+    }
+    .det_container .detbody .techbtn img{
+        width: 20px;
+        height: 18px;
+    }
+
+    .det_container .detbody .livebox{
+        width: 100%;
+    }
+    .det_container .detbody .livebox .gitbtn{
+        padding: 6px 8px;
+        width: 100%;
+    }
+    .det_container .detbody .livebox .livebtn{
+        padding: 6px 8px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* ///////////////// */
+    .det_container .detbody .description{
+        /* border: 2px solid red; */
+        width: 100%;
+      
+    }
+    
+    .det_container .detbody .description h3{
+        font-size: 16px;
+    
+    }
+    
+    .det_container .detbody .description p{
+        font-size: 14px;
+    }
+    
+    .det_container .detbody .features{
+        /* border: 2px solid red; */
+        width: 100%;
+       
+    }
+    .det_container .detbody .features h3{
+        font-size: 16px;
+    }
+    
+    
+    .det_container .detbody .features span{
+        font-size: 14px;
+    }
+    .det_container .detbody .imgbox {
+        width: 100%;
+    }
+    
+    .det_container .detbody .imgbox h3{
+        font-size: 16px;
+        
+    }
+}
+
+@media screen and (max-device-width: 390px){
+    .det_container .detbody .work_img{
+        width: 100%;
+        height: 170px;
+        /* border: 2px solid red; */
+    }
+}

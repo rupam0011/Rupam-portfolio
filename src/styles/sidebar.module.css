@@ -1,0 +1,27 @@
+.listItems{
+    cursor: pointer;
+    transition: all 0.3s;
+    /* background-color: #2b2b2b;
+    border: 1px solid #363636;
+    border-radius: 10px; */
+}
+.listItems:hover{
+    opacity: 1;
+  
+}
+
+.sidebar_text{
+
+}
+.sidebar_text:hover{
+    /* opacity: 1; */
+    /* cursor: pointer; */
+}
+
+.avatar_container{
+    transition: all 0.3s;
+}
+.avatar_container:hover{
+    /* opacity: 1; */
+    /* cursor: pointer; */
+}
