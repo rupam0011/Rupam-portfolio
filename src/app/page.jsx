@@ -84,7 +84,7 @@ export default function Home() {
           <Box className={mainStyles.work_container}>
             <h3 style={{ margin: "20px 0px", color: "#ffffff" }}>Featured Work</h3>
             <Box className={mainStyles.work_grid}>
-              {projects.map((project) => (
+              {projects.slice(0,2).map((project) => (
                 <Link key={project._id} href={`/projects/${project.slug}`}>
                   <Box className={mainStyles.cards}>
                     <Box className={mainStyles.card_img}>
