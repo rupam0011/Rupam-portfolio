@@ -94,7 +94,7 @@ const Sidebar = ({ setOpen }) => {
                         Resources
                     </Typography>
                     {[
-                        { id: 'resume', icon: <FolderSharedOutlinedIcon />, text: "Resume", link: "https://drive.google.com/file/d/1mPKB6Ur2NeUX_T7-i_SYsNd44i-Y1oDJ/view?usp=sharing" },
+                        { id: 'resume', icon: <FolderSharedOutlinedIcon />, text: "Resume", link: "https://drive.google.com/file/d/1ChKvPkmP_GPF4zgB1K9JIl5WL1ixp3y8/view?usp=sharing" },
                         { id: 'connect', icon: <ContactPhoneOutlinedIcon />, text: "Connect me", link: "https://calendly.com/rupam001majumder/30min" },
                     ].map(({ id, icon, text, link }) => (
                         <Link key={id} href={link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', color: 'inherit' }}>
